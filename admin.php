@@ -10,12 +10,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     }
     else{
         $_SESSION["msg"] = "username or password wrong.";
-        header("location:index.php");
+        header("location: login.php");
     }
 }else{
     if ( empty($_SESSION["usr"]) ) {
         $_SESSION["msg"] = "please login!";
-        header("location:index.php");
+        header("location: login.php");
     }else{
         $username = $_SESSION["usr"];
         $body = include_once ('admin_body.php');

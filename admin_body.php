@@ -18,7 +18,7 @@
   }
   var home = document.getElementById("home");
   home.onclick = function (e) {
-  self.location="/index.php";
+  self.location="/login.php";
   }
   var logout = document.getElementById("logout");
   logout.onclick = function (e) {
